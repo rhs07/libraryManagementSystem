@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="628.0" prefWidth="927.0"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.gamef.addBookController"
+            stylesheets="@addBook.css">
+
+    <!-- Top Navigation Bar -->
+    <HBox layoutX="720" layoutY="20" spacing="10">
+        <Button fx:id="BackButton" text="🏠 Home Page" onAction="#goHOMEpage"
+                prefWidth="160" prefHeight="38"/>
+    </HBox>
+
+    <!-- Main Card Area -->
+    <VBox fx:id="mainCard" layoutX="100" layoutY="80" prefWidth="720" spacing="20">
+
+        <!-- Header -->
+        <Text fx:id="headerText" text="📘 Add New Book" />
+
+        <!-- Book Title -->
+        <VBox spacing="5">
+            <Text text="Book Title" />
+            <TextField fx:id="titleTextField" promptText="Enter Book Title" />
+        </VBox>
+
+        <!-- Book ID -->
+        <VBox spacing="5">
+            <Text text="Book ID" />
+            <TextField fx:id="idTextField" promptText="Enter Book ID" />
+        </VBox>
+
+        <!-- Author -->
+        <VBox spacing="5">
+            <Text text="Author" />
+            <TextField fx:id="authorTextField" promptText="Enter Author Name" />
+        </VBox>
+
+        <!-- Publisher -->
+        <VBox spacing="5">
+            <Text text="Publisher" />
+            <TextField fx:id="publisherTextField" promptText="Enter Publisher Name" />
+        </VBox>
+
+        <!-- Internal Code -->
+        <VBox spacing="5">
+            <Text text="Book Internal Code" />
+            <TextField fx:id="CodeTextField" promptText="Enter Internal Code" />
+        </VBox>
+
+        <!-- Save / Clear Buttons -->
+        <HBox alignment="CENTER" spacing="25">
+            <Button fx:id="saveButton" text="💾 Save" onAction="#saveOnAction" prefWidth="130" prefHeight="40" />
+            <Button fx:id="clearButton" text="🧹 Clear" onAction="#clearOnAction" prefWidth="130" prefHeight="40" />
+        </HBox>
+
+        <!-- Success Message -->
+        <Text fx:id="saveSuccesfullText" text=""/>
+    </VBox>
+
+</AnchorPane>

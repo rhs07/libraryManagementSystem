@@ -1,0 +1,91 @@
+/* ===============================
+   📚 Issued Book Page – Modern Clean Theme
+=============================== */
+
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #e4edff, #ffffff);
+    -fx-font-family: "Segoe UI", "Roboto", "Sans-serif";
+}
+
+/* -------- Home Button -------- */
+#BackButton {
+    -fx-background-color: linear-gradient(to right, #36d1dc, #5b86e5);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-background-radius: 25;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 6, 0, 0, 2);
+}
+#BackButton:hover {
+    -fx-background-color: linear-gradient(to right, #43e97b, #38f9d7);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* -------- Table Container -------- */
+.table-view {
+    -fx-background-color: #f5f8ff;
+    -fx-background-radius: 15;
+    -fx-border-color: #dce3f0;
+    -fx-border-radius: 15;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 12, 0, 0, 5);
+}
+
+/* -------- Table Header -------- */
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to right, #a8edea, #fed6e3);
+    -fx-background-radius: 15 15 0 0;
+    -fx-padding: 6 0 6 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 5, 0, 0, 2);
+}
+.table-view .column-header,
+.table-view .filler {
+    -fx-size: 42px;
+}
+.table-view .column-header .label {
+    -fx-text-fill: #000000;   /* black text for readability */
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-alignment: CENTER;
+}
+
+/* -------- Table Rows -------- */
+.table-row-cell {
+    -fx-background-color: transparent;
+    -fx-font-size: 14px;
+    -fx-text-fill: #2c3e50;
+}
+.table-row-cell:odd {
+    -fx-background-color: #f1f4fb;
+}
+.table-row-cell:even {
+    -fx-background-color: #ffffff;
+}
+.table-row-cell:selected {
+    -fx-background-color: linear-gradient(to right, #74ebd5, #ACB6E5);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.table-row-cell:hover {
+    -fx-background-color: rgba(106, 17, 203, 0.15);
+}
+
+/* -------- Cell Border -------- */
+.table-cell {
+    -fx-border-color: rgba(0,0,0,0.07);
+}
+
+/* -------- Scrollbar -------- */
+.scroll-bar:vertical,
+.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+.thumb {
+    -fx-background-color: linear-gradient(to bottom, #36d1dc, #5b86e5);
+    -fx-background-radius: 5;
+}
+.thumb:hover {
+    -fx-background-color: linear-gradient(to bottom, #00b4db, #0083b0);
+}

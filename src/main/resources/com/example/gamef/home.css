@@ -1,0 +1,116 @@
+/* ===========================
+   🌈 Modern Premium Theme
+=========================== */
+
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #f0f4ff, #ffffff);
+    -fx-font-family: "Segoe UI", "Roboto", "Sans-serif";
+}
+
+/* Smooth animation for hover */
+.button, .text-field {
+    -fx-transition: all 0.25s ease-in-out;
+}
+
+/* ===========================
+   Sidebar Look
+=========================== */
+.vbox {
+    -fx-background-color: linear-gradient(to bottom, #8e2de2, #4a00e0);
+    -fx-padding: 30;
+    -fx-spacing: 20;
+    -fx-alignment: top-center;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 20, 0, 0, 5);
+}
+
+.vbox .label {
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0, 0, 1);
+}
+
+/* ===========================
+   Buttons
+=========================== */
+.button {
+    -fx-background-color: linear-gradient(to right, #00b4db, #0083b0);
+    -fx-text-fill: white;
+    -fx-background-radius: 12;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-padding: 10 16 10 16;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0, 0, 2);
+}
+
+/* Hover Effects (Vibrant Gradient Change) */
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #ff6a00, #ee0979);
+    -fx-text-fill: #ffffff;
+    -fx-scale-x: 1.04;
+    -fx-scale-y: 1.04;
+}
+
+/* Special Buttons: Close/Minimize */
+#closeButton {
+    -fx-background-color: #ff4757;
+    -fx-text-fill: white;
+    -fx-background-radius: 50%;
+    -fx-font-weight: bold;
+}
+#closeButton:hover {
+    -fx-background-color: #e84118;
+}
+
+#minimizeButton {
+    -fx-background-color: #1e90ff;
+    -fx-text-fill: white;
+    -fx-background-radius: 50%;
+    -fx-font-weight: bold;
+}
+#minimizeButton:hover {
+    -fx-background-color: #0097e6;
+}
+
+/* ===========================
+   TabPane
+=========================== */
+.tab-pane {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 15;
+    -fx-padding: 5;
+}
+
+.tab {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-color: #ecf0f1;
+}
+.tab:selected {
+    -fx-background-color: linear-gradient(to right, #36d1dc, #5b86e5);
+    -fx-text-fill: white;
+}
+
+/* ===========================
+   TextFields
+=========================== */
+.text-field {
+    -fx-background-radius: 10;
+    -fx-border-color: #dcdde1;
+    -fx-border-radius: 10;
+    -fx-padding: 8;
+}
+.text-field:focused {
+    -fx-border-color: #4a00e0;
+    -fx-effect: dropshadow(gaussian, rgba(74,0,224,0.4), 6, 0, 0, 0);
+}
+
+/* ===========================
+   Footer
+=========================== */
+#footerLabel {
+    -fx-text-fill: #6c757d;
+    -fx-font-size: 11px;
+    -fx-font-style: italic;
+}
